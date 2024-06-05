@@ -1,0 +1,7 @@
+{
+  "WorkflowUrl": "https://raw.githubusercontent.com/BMurri/test-cromwell-workflow/main/test.wdl",
+  "WorkflowInputsUrl": "https://raw.githubusercontent.com/BMurri/test-cromwell-workflow/main/testInputs.json",
+  "WorkflowInputsUrls": null,
+  "WorkflowOptionsUrl": null,
+  "WorkflowDependenciesUrl": null
+}
