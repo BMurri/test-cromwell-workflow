@@ -1,0 +1,4 @@
+{
+  "test.hello.name": "World",
+  "test.hello.inputFile": "https://raw.githubusercontent.com/BMurri/test-cromwell-workflow/main/inputFile.txt"
+}
