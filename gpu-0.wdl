@@ -10,8 +10,8 @@ task gpu {
   }
   runtime {
     docker: "mcr.microsoft.com/mirror/docker/library/ubuntu:~{tag}"
-    preemptible: true
     vm_size: "~{vmsize}"
+    preemptible: true
   }
 }
 
