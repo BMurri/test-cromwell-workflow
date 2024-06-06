@@ -1,16 +1,22 @@
-task gpu {
-  String vmsize
-  String tag
+version 1.1
 
-  command {
-    nvidia-smi
+task gpu {
+  input {
+    String vmsize
+    String tag
   }
+
+  command <<<
+    nvidia-smi
+  >>>
+  
   output {
     File outfile1 = stdout()
   }
+
   runtime {
-    docker: 'mcr.microsoft.com/mirror/docker/library/ubuntu:'+~{tag}
-    vm_size: ~{vmsize}
+    container: "mcr.microsoft.com/mirror/docker/library/ubuntu:~{tag}"
+    vm_size: "~{vmsize}"
     preemptible: true
   }
 }
