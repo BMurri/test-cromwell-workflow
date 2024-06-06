@@ -9,7 +9,7 @@ task validate {
     nvidia-smi
   }
   runtime {
-    docker: "mcr.microsoft.com/mirror/docker/library/ubuntu:" + tag
+    docker: "library/ubuntu:" + tag
     vm_size: "~{vmsize}"
     preemptible: true
   }
