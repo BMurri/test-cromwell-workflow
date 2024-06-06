@@ -1,4 +1,4 @@
-version 1.1
+version 1.0
 
 task gpu {
   input {
@@ -9,7 +9,7 @@ task gpu {
   command <<<
     nvidia-smi
   >>>
-  
+
   output {
     File outfile1 = stdout()
   }
@@ -22,5 +22,12 @@ task gpu {
 }
 
 workflow test {
-  call gpu
+  input {
+    String vmsize
+    String tag
+  }
+  call gpu {
+    tag = tag
+    vmsize = vmsize
+  }
 }
