@@ -9,8 +9,8 @@ task gpu {
     File outfile1 = stdout()
   }
   runtime {
-    docker: 'mcr.microsoft.com/mirror/docker/library/ubuntu:'+"~{tag}"
-    vm_size: "~{vmsize}"
+    docker: 'mcr.microsoft.com/mirror/docker/library/ubuntu:'+~{tag}
+    vm_size: ~{vmsize}
     preemptible: true
   }
 }
