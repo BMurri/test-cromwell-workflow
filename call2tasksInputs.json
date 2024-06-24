@@ -1,0 +1,4 @@
+{
+  "call2tasks.name": "World",
+  "call2tasks.inputFile": "https://raw.githubusercontent.com/BMurri/test-cromwell-workflow/main/inputFile.txt"
+}

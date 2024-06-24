@@ -1,0 +1,7 @@
+{
+  "WorkflowUrl": "https://raw.githubusercontent.com/BMurri/test-cromwell-workflow/main/call2tasks.wdl",
+  "WorkflowInputsUrl": "https://raw.githubusercontent.com/BMurri/test-cromwell-workflow/main/call2tasksInputs.json",
+  "WorkflowInputsUrls": null,
+  "WorkflowOptionsUrl": null,
+  "WorkflowDependenciesUrl": null
+}
