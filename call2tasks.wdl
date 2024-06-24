@@ -35,7 +35,7 @@ task hello_gen1 {
   }
   runtime {
     docker: 'mcr.microsoft.com/mirror/docker/library/ubuntu:22.04'
-    vm_size: "~{vmsize}"
+    vm_size: "Standard_A1_v2"
     preemptible: true
   }
 }
@@ -56,7 +56,7 @@ task hello_gen2 {
   }
   runtime {
     docker: 'mcr.microsoft.com/mirror/docker/library/ubuntu:22.04'
-    vm_size: "~{vmsize}"
+    vm_size: "Standard_D2a_v4"
     preemptible: true
   }
 }
